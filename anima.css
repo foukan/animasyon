@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    text-align: center;
+}
+
+html {
+    background: #333;
+    overflow: hidden;
+}
+
+#header {
+    height: 165px;
+    background: url("cty.jpg") repeat-x;
+    border-top: 12px solid #dab309f6;
+    border-bottom: 10px solid #dab309f6;
+    animation: kaycty 15s infinite linear;
+}
+
+#chrx {
+    position: absolute;
+    top: -5px;
+    left: 16%;
+    animation:
+
+        chrfly 1s 1s infinite alternate ease-in-out,
+        gel 2s;
+    /* git 2s 10s,
+     gel 1s 12s*/
+}
+
+#mew {
+    position: absolute;
+    top: -5px;
+    right: 16%;
+    animation:
+        mewfly 1s 1s infinite alternate ease-in-out,
+        mewgel 2s;
+}
+
+.flex-container {
+    display: flex;
+
+}
+
+.right,
+.left {
+    width: 35rem;
+    color: rgb(146, 44, 241);
+    padding: 2vh;
+    margin: 5vh 10vh 0 10vh;
+    font-family: 'Grandstander', cursive;
+    font-size: larger;
+    border: solid .2em rgba(0, 0, 0, 0.329);
+    border-radius: 1vh;
+
+}
+
+.right h5,
+.left h5 {
+
+    padding: 2vh;
+}
+
+.container {
+    display: inline-block;
+
+}
+
+h1 {
+    padding: 5px;
+}
+
+#xrenk {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: #05a8c5b7;
+    margin-top: 5rem;
+}
+
+.ad {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10vh;
+    color: chocolate;
+
+}
+
+hr{
+    color: #05a8c5b7;
+    width: 4rem;
+    height: .3rem;
+    background-color: #05a8c5b7;
+    border: none;
+}
+
+@keyframes kaycty {
+    0% {
+        background-position: 0 -10px;
+    }
+
+    100% {
+        background-position: -270px -10px;
+    }
+}
+
+@keyframes chrfly {
+    0% {
+        left: 10%;
+    }
+
+    100% {
+        left: 16%;
+    }
+}
+
+@keyframes gel {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 16%;
+    }
+}
+
+@keyframes git {
+    from {
+        left: 16%;
+    }
+
+    to {
+        left: 150%;
+    }
+}
+
+@keyframes mewfly {
+    0% {
+        right: 10%;
+    }
+
+    100% {
+        right: 16%;
+    }
+}
+
+@keyframes mewgel {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 16%;
+    }
+}
